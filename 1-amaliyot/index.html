@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robototexnika klubi</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-inner">
+        <h1>Robototexnika klubi</h1>
+        <p class="subtitle">Dasturiy injiniring, avtomatika va robototexnika — kelajakni bugundan yaratamiz.</p>
+        <a href="registration.html" class="btn btn-large">Ro'yxatdan o'tish</a>
+    </div>
+</header>
+
+<main>
+    <section class="cards">
+        <article class="card" onclick="this.classList.toggle('active')">
+            <h3>Robotlar</h3>
+            <p>Arduino, Raspberry Pi va zamonaviy robot platformalari bilan ishga tushirish.</p>
+            <span class="tag">Dastur</span>
+        </article>
+        <article class="card" onclick="this.classList.toggle('active')">
+            <h3>Musobaqalar</h3>
+            <p>Ta'lim, Fan va Xalqaro robot musobaqalarida ishtirok.</p>
+            <span class="tag">Tadbir</span>
+        </article>
+        <article class="card" onclick="this.classList.toggle('active')">
+            <h3>Workshop</h3>
+            <p>3D-modeling, 3D-print, sensorlar va avtomatik boshqaruv darslari.</p>
+            <span class="tag">Ta'lim</span>
+        </article>
+    </section>
+
+    <section class="stats" id="stats">
+        <div class="stat">
+            <div class="stat-num" data-target="120">0</div>
+            <div class="stat-label">A'zo</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num" data-target="15">0</div>
+            <div class="stat-label">Musobaqa</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num" data-target="8">0</div>
+            <div class="stat-label">Workshop</div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Robototexnika klubi — Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<script>
+// Counter animation on scroll
+function animateCounters() {
+    const nums = document.querySelectorAll('.stat-num');
+    nums.forEach(n => {
+        const t = +n.dataset.target;
+        const dur = 1200;
+        const start = Date.now();
+        const tick = () => {
+            const p = Math.min((Date.now() - start) / dur, 1);
+            n.textContent = Math.round(t * p);
+            if (p < 1) requestAnimationFrame(tick);
+        };
+        tick();
+    });
+}
+
+// Simple click feedback on cards
+const cards = document.querySelectorAll('.card');
+cards.forEach(c => {
+    c.addEventListener('click', () => {
+        cards.forEach(x => x.classList.remove('active'));
+        c.classList.add('active');
+    });
+});
+
+// Trigger counter when stats enter view
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) animateCounters(); });
+}, { threshold: 0.5 });
+observer.observe(document.getElementById('stats'));
+</script>
+
+</body>
+</html>
