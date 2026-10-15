@@ -37,5 +37,5 @@ Bu loyiha — web dasturlash darsi uchun amaliyot topshiriqlari.
 ---
 
 <p align="center">
-  <b>Omad tilayman! 🍀</b>
+  <b>Ishingizda omad! 🍀</b>
 </p>
