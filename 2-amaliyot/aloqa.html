@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ariza topshirish — Robototexnika klubi</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Robototexnika klubi</a>
+    <nav class="main-nav" aria-label="Asosiy menyu">
+      <ul>
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="batafsil.html">Darslar va jadval</a></li>
+        <li><a href="aloqa.html" class="active">Aloqa</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container page-header">
+    <h1>Ariza topshirish</h1>
+    <p>Shaklni to'ldiring. Arizalar dushanba kuni ko'rib chiqiladi.</p>
+  </div>
+
+  <section class="section container">
+    <h2 class="section-title">Ro'yxatdan o'tish forması</h2>
+    <form class="form-card" action="#" method="post">
+
+      <div class="form-row">
+        <div class="field"><label for="fullname">F.I.Sh.</label><input type="text" id="fullname" name="fullname" placeholder="Aliyev Vali Karimovich" required></div>
+        <div class="field"><label for="birth">Tug'ilgan sana</label><input type="date" id="birth" name="birth"></div>
+      </div>
+
+      <div class="form-row">
+        <div class="field"><label for="email">Elektron pochta</label><input type="email" id="email" name="email" placeholder="talaba@univer.uz" required></div>
+        <div class="field"><label for="phone">Telefon raqami</label><input type="tel" id="phone" name="phone" pattern="\+998[0-9]{9}" placeholder="+998901234567" title="+998 bilan boshlanadi, 12 belgi" required><span class="hint">Masalan: +998901234567</span></div>
+      </div>
+
+      <div class="form-row">
+        <div class="field"><label for="course">Kurs</label><input type="number" id="course" name="course" min="1" max="6" placeholder="2"></div>
+        <div class="field"><label for="direction">Yo'nalish</label><select id="direction" name="direction" required><option value="">Tanlang</option><option value="arduino">Arduino asoslari</option><option value="python">Python robototexnika</option><option value="3d">3D-printer</option><option value="ai">Sun'iy intellekt</option></select></div>
+      </div>
+
+      <fieldset>
+        <legend>Qaysi vaqt qulay?</legend>
+        <div class="radio-row">
+          <label for="slot-day"><input type="radio" id="slot-day" name="slot" value="day" checked> Kunduzgi</label>
+          <label for="slot-evening"><input type="radio" id="slot-evening" name="slot" value="evening"> Kechki</label>
+          <label for="slot-weekend"><input type="radio" id="slot-weekend" name="slot" value="weekend"> Hafta oxiri</label>
+        </div>
+      </fieldset>
+
+      <div class="field"><label for="message">Qo'shimcha ma'lumot</label><textarea id="message" name="message" rows="4" placeholder="Nimani o'rganmoqchisiz?"></textarea></div>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="rules" name="rules" required>
+        <label for="rules">Ichki tartibi qoidalari bilan tanishdim.</label>
+      </div>
+
+      <div class="form-actions"><button type="submit" class="btn btn-primary">Arizani yuborish</button></div>
+    </form>
+  </section>
+
+  <section class="section container">
+    <h2 class="section-title">Bizni topishingiz mumkin</h2>
+    <div class="gallery">
+      <article class="card"><h3>Manzil</h3><p>Toshkent, Universitet ko'chasi 4-uy, 3-qavat, 305-xona.</p><p class="meta">Metro «Universitet» — 5 daqiqa</p></article>
+      <article class="card"><h3>Ish vaqti</h3><p>Dushanba–juma: 14:00–20:00<br>Shanba: 10:00–16:00</p><p class="meta">+998 71 200 30 40</p></article>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2 class="section-title">Manzil xaritasi</h2>
+    <iframe class="map-frame" src="https://www.google.com/maps?q=Toshkent%20Universitet%20ko%27chasi%204&output=embed" title="Robototexnika klubi manzili" loading="lazy"></iframe>
+  </section>
+
+  <aside class="container aside-box">
+    <h2>Keyin nima bo'ladi?</h2>
+    <ul>
+      <li>Ariza dushanba kuni ko'rib chiqiladi.</li>
+      <li>Bir ish kuni ichida qo'ng'iroq qilinadi.</li>
+      <li>Bepul sinov darsiga taklif yuboriladi.</li>
+      <li>Sinovdan so'ng guruhga qo'shilasiz.</li>
+    </ul>
+  </aside>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col"><h3>Klub haqida</h3><p>Talabalar ilmiy-texnikaviy markazi huzuridagi ochiq klub.</p></div>
+    <div class="footer-col"><h3>Sahifalar</h3><ul><li><a href="index.html">Bosh sahifa</a></li><li><a href="batafsil.html">Darslar va jadval</a></li><li><a href="aloqa.html">Aloqa</a></li></ul></div>
+    <div class="footer-col"><h3>Bog'lanish</h3><ul><li>Toshkent, Universitet ko'chasi 4</li><li><a href="tel:+998712003040">+998 71 200 30 40</a></li><li><a href="mailto:klub@robototexnika.uz">klub@robototexnika.uz</a></li></ul></div>
+  </div>
+  <p class="copyright">© 2026 Robototexnika klubi — barcha huquqlar himoyalangan.</p>
+</footer>
+
+<a href="#top" class="back-to-top">↑ Yuqoriga</a>
+
+</body>
+</html>

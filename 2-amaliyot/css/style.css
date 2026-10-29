@@ -1,0 +1,147 @@
+/* ====== 2-AMALIY ISH — soddalashtirilgan CSS ====== */
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg: #f3f6fa; --card: #fff; --text: #1e293b;
+  --soft: #475569; --line: #e2e8f0; --blue: #2563eb;
+  --blue-h: #1d4ed8; --shadow: 0 6px 24px rgba(0,0,0,.08);
+  --r: 10px; --gap: 16px;
+}
+
+body { margin:0; font-family:'Segoe UI',Tahoma,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+
+/* Konteyner */
+.container { max-width:1100px; margin:0 auto; padding:0 20px; }
+
+/* === B5 — Sticky menyu === */
+.site-header { position:sticky; top:0; z-index:100; background:var(--card); border-bottom:1px solid var(--line); box-shadow:0 2px 8px rgba(0,0,0,.06); }
+.header-inner { display:flex; justify-content:space-between; align-items:center; gap:var(--gap); padding:12px 20px; max-width:1100px; margin:0 auto; }
+
+/* Logo — inline style olib tashlandi */
+.logo { font-weight:700; text-decoration:none; color:#1e293b; font-size:1.15rem; }
+.logo:hover { color:var(--blue); }
+
+/* Nav — B8 === */
+.main-nav ul { display:flex; align-items:center; gap:8px 22px; margin:0; padding:0; list-style:none; flex-wrap:wrap; }
+.main-nav a { padding:8px 4px; color:var(--soft); text-decoration:none; font-weight:600; border-bottom:2px solid transparent; }
+.main-nav a:hover { color:var(--blue); border-bottom-color:var(--line); }
+.main-nav a.active { color:var(--blue); border-bottom-color:var(--blue); }
+
+/* B11 — Gorizontal + vertikal markazlash */
+.hero { display:flex; justify-content:center; align-items:center; min-height:420px; padding:48px 20px; text-align:center; background:linear-gradient(135deg,#1e3a8a,#2563eb); color:#fff; }
+.hero-content { max-width:660px; }
+.hero h1 { font-size:2.4rem; color:#fff; }
+.hero p { color:#dbeafe; }
+.hero-actions { display:flex; justify-content:center; flex-wrap:wrap; gap:var(--gap); margin-top:24px; }
+
+/* === B3 — Kartalar === */
+.cards { display:flex; flex-wrap:wrap; gap:var(--gap); margin:24px 0; }
+.card { position:relative; flex:1 1 280px; background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:26px 24px; box-shadow:var(--shadow); transition:transform .2s, box-shadow .2s; }
+.card:hover { transform:translateY(-6px); box-shadow:0 14px 30px rgba(0,0,0,.14); }
+.card h3 { font-size:1.2rem; }
+.card p { color:var(--soft); margin-bottom:14px; }
+.card .meta { font-weight:600; color:var(--blue); font-size:.88rem; }
+
+/* B6 — Absolute belgi (badge) */
+.badge { position:absolute; top:-12px; right:18px; padding:4px 12px; background:#f59e0b; color:#fff; font-weight:700; font-size:.78rem; border-radius:999px; box-shadow:0 4px 10px rgba(245,158,11,.4); }
+.badge-blue { background:var(--blue); box-shadow:0 4px 10px rgba(37,99,235,.4); }
+
+/* Statistika */
+.stats { display:flex; flex-wrap:wrap; justify-content:center; gap:16px 48px; padding:26px 20px; background:var(--card); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); }
+.stat-num { font-size:2rem; font-weight:700; color:var(--blue); }
+.stat-label { color:var(--soft); font-size:.95rem; }
+
+/* Rasm galereyasi (figure + figcaption) */
+.gallery { display:flex; flex-wrap:wrap; gap:var(--gap); margin:24px 0; }
+.gallery-item { flex:1 1 320px; margin:0; background:var(--card); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow); }
+.gallery-item img { display:block; width:100%; height:230px; object-fit:cover; }
+.gallery-item figcaption { padding:12px 18px; font-size:.92rem; color:var(--soft); }
+
+/* Video */
+.video-box video { display:block; width:100%; max-width:860px; margin:0 auto; background:#000; border-radius:var(--r); box-shadow:var(--shadow); }
+.video-note { text-align:center; font-size:.88rem; color:var(--soft); margin-top:10px; }
+
+/* Aside */
+.aside-box { padding:22px 26px; background:#eff6ff; border:1px solid #bfdbfe; border-left:5px solid var(--blue); border-radius:var(--r); margin:28px 0; }
+.aside-box h2 { font-size:1.15rem; }
+.aside-box ul { padding-left:20px; color:var(--soft); }
+
+/* === B4 — Jadval (2/4 qiymatli) === */
+.table-wrap { overflow-x:auto; margin:24px 0; background:var(--card); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); }
+table { width:100%; min-width:640px; border-collapse:collapse; }
+caption { caption-side:top; padding:16px 20px 0; font-weight:700; text-align:left; }
+thead th { padding:12px 16px; background:var(--blue); color:#fff; text-align:left; font-size:.95rem; }
+tbody td, tbody th { padding:12px 16px; border-top:1px solid var(--line); text-align:left; vertical-align:top; }
+.table-note { background:#eff6ff; color:var(--soft); font-size:.92rem; }
+
+/* === B12 — Forma === */
+.form-card { padding:32px; max-width:780px; background:var(--card); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); }
+.form-row { display:flex; flex-wrap:wrap; gap:var(--gap); margin-bottom:var(--gap); }
+.field { flex:1 1 300px; display:flex; flex-direction:column; gap:6px; }
+.field label { font-weight:600; font-size:.95rem; }
+.field input, .field select, .field textarea { padding:10px 12px; border:1.5px solid var(--line); border-radius:8px; background:#f8fafc; font-family:inherit; font-size:1rem; }
+.field input:focus, .field select:focus, .field textarea:focus { outline:none; border-color:var(--blue); background:#fff; }
+.hint { font-size:.82rem; color:var(--soft); }
+
+/* Radio / checkbox */
+fieldset { margin:0 0 var(--gap); padding:14px 18px 16px; border:1px solid var(--line); border-radius:8px; }
+legend { padding:0 8px; font-weight:700; font-size:.95rem; }
+.radio-row { display:flex; flex-wrap:wrap; gap:12px 24px; }
+.radio-row label { display:flex; align-items:center; gap:8px; font-weight:400; color:var(--soft); }
+
+.checkbox-row { display:flex; align-items:flex-start; gap:10px; margin-bottom:var(--gap); }
+.checkbox-row input { margin-top:5px; }
+.checkbox-row label { font-weight:400; font-size:.95rem; color:var(--soft); }
+
+.form-actions { margin-top:8px; }
+
+/* Maqolalar orasidagi qo'shimcha masofa */
+.card-spaced { margin-top:20px; }
+
+/* === B7 — Yuqoriga tugma === */
+.back-to-top { position:fixed; right:20px; bottom:20px; z-index:90; padding:10px 16px; background:var(--blue); color:#fff; font-weight:600; font-size:.9rem; text-decoration:none; border-radius:999px; box-shadow:0 6px 16px rgba(37,99,235,.4); transition:background .15s; }
+.back-to-top:hover { background:var(--blue-h); color:#fff; }
+
+/* === B10 — Footer === */
+.site-footer { margin-top:48px; background:#0f172a; color:#cbd5e1; }
+.footer-inner { display:flex; flex-wrap:wrap; gap:32px; padding:40px 20px 24px; max-width:1100px; margin:0 auto; }
+.footer-col { flex:1 1 240px; }
+.footer-col h3 { color:#fff; font-size:1.05rem; }
+.footer-col ul { list-style:none; padding:0; margin:0; }
+.footer-col li { margin-bottom:8px; }
+.footer-col a { color:#93c5fd; text-decoration:none; }
+.footer-col a:hover { color:#fff; text-decoration:underline; }
+.copyright { text-align:center; padding:16px 20px; font-size:.88rem; color:#94a3b8; border-top:1px solid #1e293b; }
+
+/* Xaritada iframe */
+.map-frame { display:block; width:100%; height:260px; margin:24px 0 16px; border:0; border-radius:var(--r); box-shadow:var(--shadow); }
+
+/* Qo'shimcha: hover */
+.btn { display:inline-block; padding:12px 26px; border:2px solid transparent; border-radius:8px; font-size:1rem; font-weight:600; font-family:inherit; text-decoration:none; cursor:pointer; transition:background .15s, transform .15s; }
+.btn-primary { background:var(--blue); color:#fff; }
+.btn-primary:hover { background:var(--blue-h); transform:translateY(-2px); }
+.btn-light { background:#fff; color:var(--blue); }
+.btn-light:hover { background:#e0e7ff; color:var(--blue-h); }
+.btn-ghost { background:transparent; color:#fff; border-color:rgba(255,255,255,.7); }
+.btn-ghost:hover { background:rgba(255,255,255,.15); color:#fff; }
+
+.page-header { padding:40px 0 10px; }
+.section { padding:36px 0 8px; }
+.section-title { font-size:1.6rem; margin-bottom:6px; }
+.section-lead { color:var(--soft); max-width:720px; margin-bottom:20px; }
+
+@media (max-width:768px) {
+  .header-inner { flex-direction:column; gap:8px; }
+  .main-nav ul { justify-content:center; }
+  .hero { min-height:320px; padding:36px 16px; }
+  .hero h1 { font-size:1.8rem; }
+  .cards { flex-direction:column; align-items:center; }
+  .card, .gallery-item { flex:1 1 100%; }
+  .stats { gap:18px 28px; }
+  .form-card { padding:22px 18px; }
+  .form-row { flex-direction:column; }
+  .field { flex:1 1 auto; }
+  .footer-inner { flex-direction:column; gap:24px; }
+  .back-to-top { right:12px; bottom:12px; padding:8px 12px; font-size:.82rem; }
+}

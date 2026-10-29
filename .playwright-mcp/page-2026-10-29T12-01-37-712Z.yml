@@ -1,0 +1,124 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Robototexnika klubi" [ref=f1e4] [cursor=pointer]:
+        - /url: index.html
+      - navigation "Asosiy menyu" [ref=f1e5]:
+        - list [ref=f1e6]:
+          - listitem [ref=f1e7]:
+            - link "Bosh sahifa" [ref=f1e8] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f1e9]:
+            - link "Darslar va jadval" [ref=f1e10] [cursor=pointer]:
+              - /url: batafsil.html
+          - listitem [ref=f1e11]:
+            - link "Aloqa" [ref=f1e12] [cursor=pointer]:
+              - /url: aloqa.html
+  - main [ref=f1e13]:
+    - generic [ref=f1e14]:
+      - heading "Darslar va haftalik jadval" [level=1] [ref=f1e15]
+      - paragraph [ref=f1e16]: 2025/2026 o'quv yili qishki semestr uchun tasdiqlangan jadval. Darslar Universitet ko'chasi 4-uydagi laboratoriya xonalarida o'tkaziladi.
+    - generic [ref=f1e17]:
+      - heading "Haftalik dars jadvali" [level=2] [ref=f1e18]
+      - table [ref=f1e20]:
+        - caption [ref=f1e21]: 2-qishki semestr dars jadvali (12-yanvar — 30-mart)
+        - rowgroup [ref=f1e22]:
+          - row [ref=f1e23]:
+            - columnheader "Kun" [ref=f1e24]
+            - columnheader "Vaqt" [ref=f1e25]
+            - columnheader "Yo'nalish" [ref=f1e26]
+            - columnheader "Guruh" [ref=f1e27]
+            - columnheader "Xona" [ref=f1e28]
+        - rowgroup [ref=f1e29]:
+          - row [ref=f1e30]:
+            - cell [ref=f1e31]:
+              - strong [ref=f1e32]: Dushanba
+            - cell "14:00 – 16:00" [ref=f1e33]
+            - cell "Arduino asoslari" [ref=f1e34]
+            - cell "AT-21" [ref=f1e35]
+            - cell "305-xona" [ref=f1e36]
+          - row [ref=f1e37]:
+            - cell "16:15 – 18:15" [ref=f1e38]
+            - cell "Python robototexnika" [ref=f1e39]
+            - cell "PR-11" [ref=f1e40]
+            - cell "305-xona" [ref=f1e41]
+          - row [ref=f1e42]:
+            - cell [ref=f1e43]:
+              - strong [ref=f1e44]: Chorshanba
+            - cell "14:00 – 16:00" [ref=f1e45]
+            - cell "3D-printer va prototiplash" [ref=f1e46]
+            - cell "3D-14" [ref=f1e47]
+            - cell "212-xona" [ref=f1e48]
+          - row [ref=f1e49]:
+            - cell "16:15 – 18:15" [ref=f1e50]
+            - cell "Sun'iy intellekt kirish" [ref=f1e51]
+            - cell "SI-08" [ref=f1e52]
+            - cell "212-xona" [ref=f1e53]
+          - row [ref=f1e54]:
+            - cell [ref=f1e55]:
+              - strong [ref=f1e56]: Juma
+            - cell "15:00 – 17:00" [ref=f1e57]
+            - cell "Umumiy workshop (barcha guruhlar)" [ref=f1e58]
+            - cell "Barcha guruhlar" [ref=f1e59]
+            - cell "Aula" [ref=f1e60]
+          - row [ref=f1e61]:
+            - 'cell "Eslatma: shanba va yakshanba kunlari mustaqil loyiha ustida ishlash uchun laboratoriya 10:00 – 16:00 oralig''ida ochiq. Jadval o''qituvchi ruxsati bilan o''zgartirilishi mumkin." [ref=f1e62]'
+    - generic [ref=f1e63]:
+      - heading "Yo'nalishlar haqida batafsil" [level=2] [ref=f1e64]
+      - article [ref=f1e65]:
+        - heading "Arduino asoslari — nima bilan boshlanadi?" [level=3] [ref=f1e66]
+        - paragraph [ref=f1e67]: Birinchi mashg'ulotda Arduino Uno platasini kompyuterga ulash va «Blink» sketchini yuklash o'rganiladi. Keyingi darslarda LED, harakat sensori (PIR), harorat va namlik sensorlari bilan ishlash, servo motor boshqaruvi mashq qilinadi.
+        - paragraph [ref=f1e68]: Semestr yakunida guruh line-follower robotni yig'adi va «Arduino Cup» musobaqasida ishtirok etadi.
+        - paragraph [ref=f1e69]: "Nazorat loyihasi: avtomatlashtirilgan liniya — 20-ball"
+      - article [ref=f1e70]:
+        - heading "3D-printer va prototiplash — qo'lda boshlanadi" [level=3] [ref=f1e71]
+        - paragraph [ref=f1e72]: Avval qog'ozda chizma, so'ng Fusion 360 da 3D model yasash. Tayyor STL faylni Prusa i3 printerida chop etish parametrlari — qatlam balandligi, infill foizi va templaturasi — alohida mashq sifatida o'rganiladi.
+        - paragraph [ref=f1e73]: Semestrliga har bir talaba kamida 3 ta detal chop etadi
+    - generic [ref=f1e74]:
+      - heading "Loyiha ishlari qanday o'tadi?" [level=2] [ref=f1e75]
+      - generic [ref=f1e76]:
+        - figure "Har bir loyiha avval chizma va hisob-kitobdan boshlanadi — keyin to'plam yig'iladi." [ref=f1e77]:
+          - img "Talaba stolda robot loyihasining texnik chizmasini chizmoqda" [ref=f1e78]
+        - figure "Mikroprotsessor bilan ishlashda zaxira komponentlar doim qo'l ostida turadi." [ref=f1e80]:
+          - img "Elektron platadagi mikroprotsessor yaqindan ko'rinishda" [ref=f1e81]
+        - figure "Robototexnikaning 1960-yillardagi «oltin davri» — zamonaviy klub loyihalari uchun ilhom manbasi." [ref=f1e83]:
+          - img "Qadimgi metall uy roboti eski uslubda yasalgan" [ref=f1e84]
+    - complementary [ref=f1e86]:
+      - heading "Ko'p so'raladigan savollar" [level=2] [ref=f1e87]
+      - group [ref=f1e88]:
+        - generic "Elektronika bilan oldindan bilish shartmi?" [ref=f1e89] [cursor=pointer]
+      - group [ref=f1e90]:
+        - generic "O'z asbobimni olib kelsa bo'ladimi?" [ref=f1e91] [cursor=pointer]
+      - group [ref=f1e92]:
+        - generic "Musobaqaga qanday qatnasaman?" [ref=f1e93] [cursor=pointer]
+  - contentinfo [ref=f1e94]:
+    - generic [ref=f1e95]:
+      - generic [ref=f1e96]:
+        - heading "Klub haqida" [level=3] [ref=f1e97]
+        - paragraph [ref=f1e98]: Talabalar ilmiy-texnikaviy ijodiyoti markazi huzuridagi ochiq robototexnika klubi. A'zo bo'lish uchun to'lov talab qilinmaydi.
+      - generic [ref=f1e99]:
+        - heading "Sahifalar" [level=3] [ref=f1e100]
+        - list [ref=f1e101]:
+          - listitem [ref=f1e102]:
+            - link "Bosh sahifa" [ref=f1e103] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f1e104]:
+            - link "Darslar va jadval" [ref=f1e105] [cursor=pointer]:
+              - /url: batafsil.html
+          - listitem [ref=f1e106]:
+            - link "Aloqa va ariza" [ref=f1e107] [cursor=pointer]:
+              - /url: aloqa.html
+      - generic [ref=f1e108]:
+        - heading "Bog'lanish" [level=3] [ref=f1e109]
+        - list [ref=f1e110]:
+          - listitem [ref=f1e111]: Toshkent sh., Universitet ko'chasi 4-uy
+          - listitem [ref=f1e112]:
+            - link "+998 71 200 30 40" [ref=f1e113] [cursor=pointer]:
+              - /url: tel:+998712003040
+          - listitem [ref=f1e114]:
+            - link "klub@robototexnika.uz" [ref=f1e115] [cursor=pointer]:
+              - /url: mailto:klub@robototexnika.uz
+    - paragraph [ref=f1e116]: © 2026 Robototexnika klubi — barcha huquqlar himoyalangan.
+  - link "Sahifa boshiga qaytish" [ref=f1e117] [cursor=pointer]:
+    - /url: "#top"
+    - text: ↑ Yuqoriga
